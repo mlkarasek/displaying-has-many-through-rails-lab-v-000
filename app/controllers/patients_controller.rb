@@ -1,11 +1,10 @@
 class PatientsController < ApplicationController
 
-  def index 
+  def index
     @patients = Patient.all
-  end 
+  end
 
   def show
     @patient = Patient.find(params[:id])
-  end 
-
+  end
 end
